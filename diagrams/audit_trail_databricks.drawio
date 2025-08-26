@@ -176,7 +176,7 @@
         <mxCell id="rOkDiotb9pNexd16iEMF-6" value="Data Firehose" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=16;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.kinesis_data_firehose;" parent="1" vertex="1">
           <mxGeometry x="50" y="280.25" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rOkDiotb9pNexd16iEMF-8" value="Messenging Layer" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="rOkDiotb9pNexd16iEMF-8" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Messaging&lt;/span&gt;&amp;nbsp;Layer" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-10" y="120" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="rOkDiotb9pNexd16iEMF-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="rOkDiotb9pNexd16iEMF-9" target="rOkDiotb9pNexd16iEMF-6" edge="1">
