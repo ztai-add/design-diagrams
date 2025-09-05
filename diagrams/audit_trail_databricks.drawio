@@ -184,10 +184,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="f0GGDQSVz7OjvdCO2Jps-11" value="app1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="f0GGDQSVz7OjvdCO2Jps-11" value="service1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="750" y="210" width="80" height="58.5" as="geometry" />
         </mxCell>
-        <mxCell id="f0GGDQSVz7OjvdCO2Jps-12" value="app2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="f0GGDQSVz7OjvdCO2Jps-12" value="service2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="750" y="430" width="80" height="58.5" as="geometry" />
         </mxCell>
       </root>
