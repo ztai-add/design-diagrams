@@ -17,19 +17,10 @@
           <mxGeometry x="649.99" y="290" width="70" height="70" as="geometry" />
         </mxCell>
         <mxCell id="WtTVvafhwajfm4MTaFXI-5" value="Internal Service" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.webplus_web_app_service;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="90" y="116" width="54.900000000000006" height="54.900000000000006" as="geometry" />
-        </mxCell>
-        <mxCell id="WtTVvafhwajfm4MTaFXI-6" value="Internal User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="100" y="300" width="30" height="60" as="geometry" />
+          <mxGeometry x="110" y="211.3" width="54.900000000000006" height="54.900000000000006" as="geometry" />
         </mxCell>
         <mxCell id="WtTVvafhwajfm4MTaFXI-8" value="Audit Trail Service" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="610" y="80" width="150" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="WtTVvafhwajfm4MTaFXI-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="WtTVvafhwajfm4MTaFXI-6" target="E_Ix-bq6Br029kDSQJIA-1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="190" y="260" as="sourcePoint" />
-            <mxPoint x="420" y="430" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="WtTVvafhwajfm4MTaFXI-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="E_Ix-bq6Br029kDSQJIA-3" target="WtTVvafhwajfm4MTaFXI-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
