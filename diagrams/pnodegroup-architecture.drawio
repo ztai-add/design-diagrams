@@ -1,0 +1,191 @@
+<mxfile host="embed.diagrams.net">
+  <diagram id="uru3b6k7-5pgl" name="Page-1">
+    <mxGraphModel dx="948" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="api-section" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="REST API Layer" vertex="1">
+          <mxGeometry height="210" width="240" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="res-group" parent="api-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="GroupResource" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="res-search" parent="api-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="SearchResource" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="group-mgmt-section" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontSize=14;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Group Management" vertex="1">
+          <mxGeometry height="130" width="240" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp-automation" parent="group-mgmt-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Group Automation Rule" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="portfolio-job" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="PortfolioDataJob (PDJ)" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="service-section" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontSize=14;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Service Layer" vertex="1">
+          <mxGeometry height="450" width="260" x="360" y="40" as="geometry">
+            <mxRectangle height="30" width="130" x="360" y="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svc-contact" parent="service-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="ContactPermissionsService" vertex="1">
+          <mxGeometry height="60" width="220" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-reader" parent="service-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="NodeGroupReaderService" vertex="1">
+          <mxGeometry height="60" width="220" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="svc-writer" parent="service-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="NodeGroupWriterService" vertex="1">
+          <mxGeometry height="60" width="220" x="20" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-31" edge="1" parent="service-section" source="svc-type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svc-type" parent="service-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="NodeGroupTypeService" vertex="1">
+          <mxGeometry height="60" width="220" x="20" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-32" edge="1" parent="service-section" source="svc-rel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="svc-rel" parent="service-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="NodeGroupRelationshipService" vertex="1">
+          <mxGeometry height="60" width="220" x="20" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="cache-section" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontSize=14;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Cache" vertex="1">
+          <mxGeometry height="210" width="240" x="680" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cache-user-perm" parent="cache-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="User Permission Cache&#xa;(Redis)" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cache-group-member" parent="cache-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Group Member Cache&#xa;(local + memcached)" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-35" edge="1" parent="1" source="db-section" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="svc-reader">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="465" />
+              <mxPoint x="660" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-44" edge="1" parent="1" source="db-section" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="cache-group-member">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-45" connectable="0" parent="NuKiLgRXQOQvysvy0xaJ-44" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="LOD" vertex="1">
+          <mxGeometry relative="1" x="-0.0462" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="db-section" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontSize=14;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Database" vertex="1">
+          <mxGeometry height="370" width="240" x="680" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl-pnodegroup" parent="db-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="pnodegroup" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl-pnodegrouptype" parent="db-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="pnodegrouptype" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl-pnodegroupmember" parent="db-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="pnodegroupmember" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl-pnodegrouprelationships" parent="db-section" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="pnodegrouprelationships" vertex="1">
+          <mxGeometry height="60" width="200" x="20" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="res-search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;" target="svc-reader" value="search">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="220" />
+              <mxPoint x="290" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="grp-automation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="svc-writer" value="2. set groups">
+          <mxGeometry relative="1" x="-0.1" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="330" y="360" />
+              <mxPoint x="330" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="portfolio-job" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="grp-automation" value="1. gets entities via">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-4" edge="1" parent="1" source="res-group" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="svc-reader" value="search">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="110" as="sourcePoint" />
+            <mxPoint x="450" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-14" edge="1" parent="1" source="res-group" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.373;entryDx=0;entryDy=0;entryPerimeter=0;" target="svc-writer">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="135" />
+              <mxPoint x="300" y="272.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-15" connectable="0" parent="NuKiLgRXQOQvysvy0xaJ-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="write" vertex="1">
+          <mxGeometry relative="1" x="0.1298" y="-1" as="geometry">
+            <mxPoint y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-17" edge="1" parent="1" source="svc-contact" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="res-group">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-18" connectable="0" parent="NuKiLgRXQOQvysvy0xaJ-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="filter" vertex="1">
+          <mxGeometry relative="1" x="0.1333" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-23" edge="1" parent="1" source="cache-group-member" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="svc-reader">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-24" connectable="0" parent="NuKiLgRXQOQvysvy0xaJ-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="read via&lt;br&gt;LOD" vertex="1">
+          <mxGeometry relative="1" x="0.14" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-30" edge="1" parent="1" source="svc-writer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="db-section">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-38" edge="1" parent="1" source="svc-contact" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="res-search">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="135" />
+              <mxPoint x="340" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-39" connectable="0" parent="NuKiLgRXQOQvysvy0xaJ-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="filter" vertex="1">
+          <mxGeometry relative="1" x="0.3189" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-40" edge="1" parent="1" source="cache-user-perm" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="res-search">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="120" />
+              <mxPoint x="630" y="240" />
+              <mxPoint x="160" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-41" connectable="0" parent="NuKiLgRXQOQvysvy0xaJ-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="filter (ff controled)" vertex="1">
+          <mxGeometry relative="1" x="0.209" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-42" edge="1" parent="1" source="svc-writer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="cache-group-member">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NuKiLgRXQOQvysvy0xaJ-43" connectable="0" parent="NuKiLgRXQOQvysvy0xaJ-42" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="invalidate" vertex="1">
+          <mxGeometry relative="1" x="-0.183" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
